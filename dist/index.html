@@ -5,16 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADASHE</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body class="bg-[#161515]">
+<body class="bg-[#161515] text-white font-boby ">
 
     <!-- NAV -->
     
-    <nav class="bg-black p-5">
-        <h1 class="text-8xl font-semibold text-center text-[#e28743]">ADASHE</h1>
+    <nav class="bg-black p-5 flex justify-between items-center lg:justify-center">
+        <h1 class="text-3xl lg:text-8xl font-semibold text-center text-[#e28743]">ADASHE</h1>
+
+            <div class=" flex lg:hidden">
+                <button id="hamburger-bnt" class="inline-flex mr-2 rounded-md text-white hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>
+                      
+                </button>
+
     </nav>
 
     <!--  -->
+
+    <div>
+        <div class="bg-[#585656] w-full p-6 text-center ">
+        <i class='bx bx-group text-6xl lg:text-8xl' style='color:#e28743'  ></i><br><br>
+        <p class="text-2xl">Click here to get all members</p> <br>
+        <button class=" bg-[#cc892c] hover:text-[#ddd] ease-in-out hover:scale-110 transition-transform duration-900 w-[120px] lg:w-[200px] rounded-md h-9 lg:h-11 lg:text-2xl">All Members</button>
+        </div><br>
+
+        <!--  -->
+
+        <div class="bg-[#585656] w-full p-6 text-center ">
+            <i class='bx bx-user-plus text-6xl lg:text-8xl' style='color:#e28743' ></i><br><br>
+            <p class="text-2xl">Add new member</p><br>
+            <div class="flex items-center justify-center">
+            <input class="p-3 w-[320px] lg:w-[900px] text-black" type="text" placeholder=" 'Name',  'Gender',  'Amount'">
+           <button class="ease-in-out hover:scale-110 transition-transform duration-900 lg:relative right-14 bg-black p-1 lg:p-0 lg:bg-white"> <i class='bx bx-arrow-back bx-rotate-180 text-4xl' style='color:#e28743' ></i></button>
+           </div>
+        </div><br>
+
+        <!--  -->
+
+        <div class="bg-[#585656] w-full p-6 text-center ">
+             <i class='bx bx-search text-6xl lg:text-8xl' style='color:#e28743' ></i><br><br>
+             <p class="text-2xl">Search member</p><br>
+             <div class="flex items-center justify-center ">
+                <input class="p-3 w-[320px] lg:w-[900px] text-black" type="text" placeholder=" 'Member Name'">
+               <button class="ease-in-out hover:scale-110 transition-transform duration-900 lg:relative right-14 bg-black p-1 lg:p-0 lg:bg-white"> <i class='bx bx-search text-4xl' style='color:#e28743' ></i></button>
+               </div>
+        </div>
+
+    </div>
 
 </body>
 </html>
